@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipmentAPIUI", "EquipmentAPIUI\EquipmentAPIUI.csproj", "{165EA963-CEE5-4C48-AB7E-58C952D013AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{165EA963-CEE5-4C48-AB7E-58C952D013AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{165EA963-CEE5-4C48-AB7E-58C952D013AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{165EA963-CEE5-4C48-AB7E-58C952D013AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{165EA963-CEE5-4C48-AB7E-58C952D013AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EBE9BFC-4BE6-4698-A46F-1254A2B697E2}
+	EndGlobalSection
+EndGlobal

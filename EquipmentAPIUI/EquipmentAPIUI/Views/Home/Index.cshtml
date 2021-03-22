@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form action="javascript:void(0);" method="post" onsubmit="addequipment()">
+            <div class="form-group">
+                
+                <input type="text" id="equipmentname" placeholder="Equipment Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" id="equipmentamount" placeholder="Equipment Amount" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" id="equipmentdate" placeholder="Equipment Date" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ADD" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="js/site.js" asp-append-version="true"></script>
+
+
+<script type="text/javascript">
+ getequipment();
+</script>
+

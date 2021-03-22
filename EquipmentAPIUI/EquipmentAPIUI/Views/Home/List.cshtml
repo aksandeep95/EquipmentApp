@@ -1,0 +1,78 @@
+﻿<script src="js/site.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        getequipment();
+    }
+</script>
+
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Equipment Name</th>
+            <th>Equipment Amount</th>
+            <th>Purchase Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="equipmentlist"></tbody>
+</table>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div id="editform" style="display:none">
+            <form action="javascript:void(0);" onsubmit="updateequipment()">
+                <input type="hidden" id="editequipmentid">
+                <div class="form-group">
+                    <input type="text" id="editequipmentname" placeholder="Equipment Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="editequipmentamount" placeholder="Equipment Amount" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="date" id="editequipmentdate" placeholder="Equipment Date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary">
+                    <button type="button" onclick="closebutton()" class="btn btn-danger">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="deleteform" style="display:none">
+            <form action="javascript:void(0);" onsubmit="mydelete()">
+                <input type="hidden" id="deleteequipmentid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="deleteequipmentname">Name:</label>
+                        <h6 id="deleteequipmentname"></h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="deleteequipmentamount">Amount:</label>
+                        <h6 id="deleteequipmentamount"></h6>
+                    </div>
+                </div>
+                <div class="form-group" id="delete">
+                    <input type="submit" value="Delete" class="btn btn-primary">
+                    <button type="button" onclick="closedeletebutton()" class="btn btn-danger">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
