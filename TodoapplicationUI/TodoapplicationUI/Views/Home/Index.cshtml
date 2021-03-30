@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form action="javascript:void(0);" method="post" onsubmit="addtodo()">
+            <div class="form-group">
+
+                <input type="text" id="todoname" placeholder="todo Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" id="todoamount" placeholder="todo Amount" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="date" id="tododate" placeholder="todo Date" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ADD" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>todo Name</th>
+            
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="todolist"></tbody>
+</table>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div id="editform" style="display:none">
+            <form action="javascript:void(0);" onsubmit="updatetodo()">
+                <input type="hidden" id="edittodoid">
+                <div class="form-group">
+                    <input type="text" id="edittodoname" placeholder="todo Name" class="form-control">
+                </div>
+               
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary">
+                    <button type="button" onclick="closebutton()" class="btn btn-danger">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="deleteform" style="display:none">
+            <form action="javascript:void(0);" onsubmit="mydelete()">
+                <input type="hidden" id="deletetodoid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="deletetodoname">Name:</label>
+                        <h6 id="deletetodoname"></h6>
+                    </div>
+                </div>
+               
+                <div class="form-group" id="delete">
+                    <input type="submit" value="Delete" class="btn btn-primary">
+                    <button type="button" onclick="closedeletebutton()" class="btn btn-danger">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/site.js" asp-append-version="true"></script>
